@@ -56,52 +56,6 @@
                     <div class="sidebar">
                         <div class="sidebar__item">
                             <div class="latest-product__text">
-                                <h4>Popular Designs</h4>
-                                <div class="latest-product__slider owl-carousel">
-                                    <div class="latest-prdouct__slider__item">
-                                        @foreach ( $orderitems as $item )
-											<a href="{{ url('proudct/details/'.$item->product->id) }}" class="latest-product__item">
-												<div class="latest-product__item__pic">
-													<img src="{{ asset($item->product->image_one) }}" style="height:180px; width:180px;" alt="">
-												</div>
-												<div class="latest-product__item__text">
-													<h6>{{ $item->product->product_name }}</h6>
-													<span>${{ $item->price }}</span>
-												</div>
-											</a>
-										@endforeach
-                                    </div>
-                                    <div class="latest-prdouct__slider__item">
-                                        @foreach ( $orderitems as $item )
-											<a href="{{ url('proudct/details/'.$item->product->id) }}" class="latest-product__item">
-												<div class="latest-product__item__pic">
-													<img src="{{ asset($item->product->image_two) }}" style="height:180px; width:180px;" alt="">
-												</div>
-												<div class="latest-product__item__text">
-													<h6>{{ $item->product->product_name }}</h6>
-													<span>${{ $item->price }}</span>
-												</div>
-											</a>
-										@endforeach  
-                                    </div>
-                                    <div class="latest-prdouct__slider__item">
-                                        @foreach ( $orderitems as $item )
-											<a href="{{ url('proudct/details/'.$item->product->id) }}" class="latest-product__item">
-												<div class="latest-product__item__pic">
-													<img src="{{ asset($item->product->image_three) }}" style="height:180px; width:180px;" alt="">
-												</div>
-												<div class="latest-product__item__text">
-													<h6>{{ $item->product->product_name }}</h6>
-													<span>${{ $item->price }}</span>
-												</div>
-											</a>
-										@endforeach  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar__item">
-                            <div class="latest-product__text">
                                 <h4>Recent Designs</h4>
                                 <div class="latest-product__slider owl-carousel">
                                     <div class="latest-prdouct__slider__item">
@@ -151,24 +105,23 @@
                 <div class="col-lg-9 col-md-7">
                     <div class="product__discount">
                         <div class="section-title product__discount__title">
-                            <h2>Designs Slider</h2>
+                            <h2>Popular Designs Slider</h2>
                         </div>
                         <div class="row">
                             <div class="product__discount__slider owl-carousel">
-                                @foreach ($products as $product)
+                                @foreach ($orderitems as $item)
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg=" {{ asset($product->image_one) }}">
+                                            data-setbg="{{ asset($item->product->image_one) }}">
                                             
                                             <ul class="product__item__pic__hover">
 
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>{{ $product->product_code }}</span>
-                                            <h5><a href="{{ url('proudct/details/'.$product->id) }}">{{ $product->product_name}}</a></h5>
-                                            <div class="product__item__price">${{ $product->price }} <span></span></div>
+                                            <h5><a href="{{ url('proudct/details/'.$product->id) }}">{{ $item->product->product_name }}</a></h5>
+                                            <div class="product__item__price">${{ $item->price }} <span></span></div>
                                         </div>
                                     </div>
                                 </div>
