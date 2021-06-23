@@ -24,7 +24,7 @@ class UserfontController extends Controller
         $productsp = Product::where('status',1)->latest()->paginate(9);
         $lts_p = Product::where('status',1)->limit(3)->latest()->get();
         $subcategories = Subcategory::where('status',1)->latest()->get();
-        $orderitems = OrderItem::with('product')->orderBy('created_at', 'desc')->latest()->take(3)->get();
+        $orderitems = OrderItem::with('product')->orderBy('created_at', 'desc')->latest()->get();
         return view('pages.font',compact('products','subcategories','productsp','lts_p','orderitems'));
     }
 
