@@ -85,7 +85,7 @@
 							<div id="m_nav_container" class="m_nav wthree_bg">
 								<nav class="menu menu--sebastian">
 									<ul id="m_nav_list" class="m_nav menu__list">
-										<li class="m_nav_item active" id="m_nav_item_1"> <a href="{{ url('/') }}" class="link link--kumya"><i class="fa fa-home" aria-hidden="true"></i><span data-letters="Home">Home</span></a></li>
+										<li class="m_nav_item" id="m_nav_item_1"> <a href="{{ url('/') }}" class="link link--kumya"><i class="fa fa-home" aria-hidden="true"></i><span data-letters="Home">Home</span></a></li>
 										<li class="m_nav_item" id="moble_nav_item_4"> <a href="{{ url('pages/services') }}" class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="Our Services">Our Services</span></a></li>
 										<li class="m_nav_item" id="moble_nav_item_4"> <a href="{{ url('pages/about') }}" class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="About Us">About Us</span></a></li>
 										<li class="m_nav_item" id="moble_nav_item_6"> <a href="{{ url('pages/contact') }}" class="link link--kumya"><i class="fa fa-envelope-o" aria-hidden="true"></i><span data-letters="Contact">Contact</span></a></li>
