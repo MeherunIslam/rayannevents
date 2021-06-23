@@ -42,7 +42,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__left">
                                 <ul>
-                                    <li style="background: transparent; background-color: white; font-size: 20px; color: #1c1c1c; border-radius:2px; padding-top:15px; padding-bottom:15px; padding-left:20px; padding-right:20px; width:620px; height:80px;">T0 Get 20% Discount You Can Apply Coupon "EID-UL-ADHA".....</li>
+                                    <li style="background: transparent; background-color: white; font-size: 20px; color: #1c1c1c; border-radius:2px; padding-top:15px; padding-bottom:15px; padding-left:20px; padding-right:20px; width:620px; height:80px;">T0 Get 15% Discount You Can Apply Coupon "EID-UL-ADHA".....</li>
                                 </ul>
                             </div>
                         </div>
