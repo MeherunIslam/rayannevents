@@ -118,7 +118,7 @@
                                 <input type="text" placeholder="Street Address" class="checkout__input__add" name="address">
                             </div>
                             <div class="checkout__input">
-                                <p>Country/State<span>*</span></p>
+                                <p>District<span>*</span></p>
                                 <input type="text" name="state">
                             </div>
                             <div class="checkout__input">
